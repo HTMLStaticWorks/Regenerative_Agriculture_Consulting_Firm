@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TerraSoil - Regenerative Services & Soil Testing Packages</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Tailwind CSS 3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#f4f7f4',
+              dark: '#0d1b1e',
+              primary: '#2d6a4f',
+              primaryHover: '#1b4332',
+              secondary: '#52b788',
+              secondaryHover: '#40916c',
+              accent: '#d4a373',
+              navy: '#1b4332',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-emerald-700/20">
+            <i data-lucide="sprout" class="w-6 h-6"></i>
+          </div>
+          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Terra<span class="text-brand-primary">Soil</span>
+          </span>
+        </a>
+
+        <!-- Desktop Menu (Single word items) -->
+        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home</a>
+          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home2</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">About</a>
+          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-emerald-400">Services</a>
+          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Cases</a>
+          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Blog</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Desktop Utility Buttons -->
+        <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
+          
+          <!-- RTL Toggle -->
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+          </button>
+          
+          <!-- Theme Toggle -->
+          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
+            <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
+          </button>
+
+          <!-- Enquire CTA Button -->
+          <a href="enquire.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold hover:shadow-lg hover:shadow-emerald-600/25 transition-all transform hover:-translate-y-0.5">Enquire</a>
+        </div>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Down Menu -->
+    <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
+      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-emerald-50/50 dark:bg-emerald-950/20">Services</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Cases</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+      <a href="enquire.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Enquire</a>
+      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+      <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
+        <!-- Mobile RTL Toggle -->
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+          <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+        </button>
+        <!-- Mobile Theme Toggle -->
+        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
+          <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
+          <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
+          <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
+        </button>
+      </div>
+      <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-grow pt-20">
+    
+    <!-- 1. Hero Section -->
+    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-slate-900/30 z-0"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
+        <span class="text-emerald-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">What We Offer</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
+          Soil Testing, Cover Cropping & Grazing Management
+        </h1>
+        <p class="text-slate-200 max-w-xl mx-auto text-xs sm:text-sm md:text-base font-normal leading-relaxed">
+          Comprehensive agricultural consulting solutions engineered to restore soil biology, reduce input costs, and improve crop resilience.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Services List Section (4 Cards Grid) -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Service 1: Soil Testing -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80" 
+                 alt="Soil testing laboratory analysis" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Comprehensive Soil Testing</h3>
+              <p class="text-xs sm:text-sm text-slate-650 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                PLFA biological assays, Haney soil health tests, and micronutrient diagnostics to pinpoint exact soil deficiencies.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-brand-primary font-bold uppercase tracking-wider">ISO-Certified Lab Assays</div>
+            </div>
+          </div>
+
+          <!-- Service 2: Cover Cropping -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
+                 alt="Cover cropping strategy field" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Cover Cropping Strategy</h3>
+              <p class="text-xs sm:text-sm text-slate-650 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                Formulating multi-species seed mixes tailored to scavenge nitrogen, break hardpans, and fix organic carbon.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-brand-secondary font-bold uppercase tracking-wider">Custom Seed Prescriptions</div>
+            </div>
+          </div>
+
+          <!-- Service 3: Grazing Management -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1545468800-85cc9bc6ecf7?auto=format&fit=crop&w=800&q=80" 
+                 alt="Adaptive grazing livestock management" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Adaptive Grazing Management</h3>
+              <p class="text-xs sm:text-sm text-slate-650 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                High-density rotational paddock design to optimize forage growth, animal weight gain, and manure nutrient spread.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-emerald-400 font-bold uppercase tracking-wider">AMP Livestock Rotations</div>
+            </div>
+          </div>
+
+          <!-- Service 4: Carbon & Moisture -->
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden shadow-lg flex flex-col h-full hover:shadow-xl transition-all">
+            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80" 
+                 alt="Water infiltration and soil carbon consulting" 
+                 class="h-60 w-full object-cover">
+            <div class="p-6 flex flex-col flex-grow text-left rtl:text-right">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">Water & Carbon Optimization</h3>
+              <p class="text-xs sm:text-sm text-slate-650 dark:text-slate-300 font-normal leading-relaxed flex-grow">
+                Field moisture probe installation, water infiltration testing, and soil organic carbon credit qualification.
+              </p>
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-amber-500 font-bold uppercase tracking-wider">ESG & Carbon Offsets</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Our Consulting Process Section -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-950 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">Our 3-Phase Process</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
+            What Happens During Your Field Consulting Journey
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+            We follow a structured, field-tested roadmap to deliver measurable soil health and financial returns.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Phase 1 -->
+          <div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-md space-y-4">
+            <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/30 text-brand-primary text-xs font-bold font-outfit">STEP 1</div>
+            <h3 class="font-bold text-slate-900 dark:text-white text-lg">On-Site Intake & GPS Core Sampling</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              We extract deep soil cores across management zones and run PLFA biological bio-scans to benchmark baseline organic matter and active soil life.
+            </p>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-md space-y-4">
+            <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-950/30 text-brand-secondary text-xs font-bold font-outfit">STEP 2</div>
+            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Field Mapping & Custom Prescription</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              Our certified agronomists design custom cover crop seed mixtures, reduced tillage plans, and bio-stimulant protocols tailored for your equipment.
+            </p>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="p-8 bg-white dark:bg-slate-900 rounded-3xl shadow-md space-y-4">
+            <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/30 text-amber-500 text-xs font-bold font-outfit">STEP 3</div>
+            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Implementation & Annual SOM Tracking</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              We work alongside your operators during planting and termination, tracking annual yield improvements, input reductions, and carbon credits.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Session / Package Options Section -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm">Consulting Packages</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
+            Transparent Agricultural Consulting Plans
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+            Select an agronomy plan tailored for your farm acreage and land health objectives.
+          </p>
+        </div>
+
+        <!-- Plans Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Plan 1 -->
+          <div class="flex flex-col h-full bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-100 dark:border-slate-900 shadow-lg relative">
+            <div class="mb-6">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Soil Diagnostic Audit</h3>
+              <p class="text-xs text-slate-400 mt-1 font-normal">First step — intake & comprehensive lab bio-scan</p>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">$450</span>
+                <span class="text-xs text-slate-400 ml-1 font-medium">/ field report</span>
+              </div>
+            </div>
+            
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 flex-grow">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>GPS core soil extraction</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>PLFA biological microbial assay</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Agronomist recommendation report</span></li>
+              <li class="text-slate-400 line-through flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="x" class="w-4 h-4"></i><span>Season-long field visits</span></li>
+            </ul>
+
+            <a href="contact.html?plan=diagnostic" class="w-full text-center py-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              Request Audit
+            </a>
+          </div>
+
+          <!-- Plan 2 -->
+          <div class="flex flex-col h-full bg-white dark:bg-slate-900 p-8 rounded-3xl border-2 border-brand-primary shadow-xl relative">
+            <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-brand-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Most Popular
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Full Season Agronomy</h3>
+              <p class="text-xs text-slate-400 mt-1 font-normal">Complete crop rotation & cover crop management</p>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">$1,850</span>
+                <span class="text-xs text-slate-400 ml-1 font-medium">/ season</span>
+              </div>
+            </div>
+            
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 flex-grow">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Full soil bio-scans & chemical tissue assays</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Custom multi-species cover crop formulation</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>4 seasonal on-site field inspections</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Synthetic input reduction roadmap</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Direct phone access to lead agronomist</span></li>
+            </ul>
+
+            <a href="contact.html?plan=fullseason" class="w-full text-center py-3.5 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white text-sm font-semibold shadow-md shadow-emerald-600/20 transition-colors">
+              Book Season Plan
+            </a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="last-card-md flex flex-col h-full bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-100 dark:border-slate-900 shadow-lg relative">
+            <div class="mb-6">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Enterprise & Carbon Program</h3>
+              <p class="text-xs text-slate-400 mt-1 font-normal">Large-scale farms & land asset portfolios</p>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">$3,500+</span>
+                <span class="text-xs text-slate-400 ml-1 font-medium">/ annual contract</span>
+              </div>
+            </div>
+            
+            <ul class="space-y-3 mb-8 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 flex-grow">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Everything in Full Season Agronomy</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Adaptive grazing paddock design</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Soil Organic Carbon (SOC) verification report</span></li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse"><i data-lucide="check" class="w-4 h-4 text-brand-primary"></i><span>Carbon marketplace qualification support</span></li>
+            </ul>
+
+            <a href="contact.html?plan=enterprise" class="w-full text-center py-3.5 rounded-xl border border-slate-200 dark:border-slate-800 text-sm font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              Contact for Enterprise
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Custom note -->
+        <div class="mt-12 p-6 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 flex flex-col md:flex-row items-center justify-between text-left rtl:text-right gap-6">
+          <div class="flex items-center space-x-4 rtl:space-x-reverse">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 text-brand-secondary flex items-center justify-center flex-shrink-0">
+              <i data-lucide="tractor" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-base">Custom Acreage Prescriptions & EQIP Guidance</h4>
+              <p class="text-xs text-slate-400 mt-0.5 font-normal">Custom quotes available for multi-thousand acre holdings and government cost-share alignment.</p>
+            </div>
+          </div>
+          <a href="contact.html?type=custom" class="px-6 py-3 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white font-semibold text-sm transition-colors flex-shrink-0">
+            Inquire Now
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="glass-footer py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-white shadow-md shadow-emerald-700/20">
+              <i data-lucide="sprout" class="w-5 h-5"></i>
+            </div>
+            <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+              Terra<span class="text-brand-primary">Soil</span>
+            </span>
+          </a>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
+            Science-backed regenerative agriculture consulting. Helping farmers and land stewards build soil organic matter, optimize cover crops, and increase profitability.
+          </p>
+          
+          <!-- Social Icons -->
+          <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Facebook">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="X">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-100 dark:bg-slate-800 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Instagram">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Services Links -->
+        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Services</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Soil Diagnostics</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Cover Cropping</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Grazing Plans</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Carbon Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Company</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="about.html" class="hover:text-brand-primary transition-colors">Our Agronomists</a></li>
+            <li><a href="gallery.html" class="hover:text-brand-primary transition-colors">Case Studies</a></li>
+            <li><a href="blog.html" class="hover:text-brand-primary transition-colors">Soil Insights</a></li>
+            <li><a href="contact.html" class="hover:text-brand-primary transition-colors">Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacts and Hours -->
+        <div class="md:col-span-1 lg:col-span-4 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-outfit">Contact & Lab Hours</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span>+1 (800) 555-SOIL</span>
+            </li>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span class="break-all">info@terrasoil-agri.com</span>
+            </li>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-secondary flex-shrink-0"></i>
+              <span>Mon - Fri: 7:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright row -->
+      <div class="footer-copyright pt-8 border-t flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-medium">
+        <p>&copy; 2026 TerraSoil Consulting Firm. All rights reserved.</p>
+        <div class="flex items-center space-x-4 rtl:space-x-reverse mt-4 sm:mt-0">
+          <a href="#" class="hover:text-slate-900 dark:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="main.js"></script>
+</body>
+</html>
