@@ -42,7 +42,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 dark:bg-[#061814] dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
 
   <!-- ================= NAVBAR ================= -->
   <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -60,26 +60,26 @@
         </a>
 
         <!-- Desktop Menu (Single word items) -->
-        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
-          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home</a>
-          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home2</a>
-          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">About</a>
-          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Services</a>
-          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Cases</a>
-          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Blog</a>
-          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+        <div class="hidden lg:flex items-center space-x-2 rtl:space-x-reverse">
+          <a href="index.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Home</a>
+          <a href="home2.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Home2</a>
+          <a href="about.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">About</a>
+          <a href="services.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Services</a>
+          <a href="gallery.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Cases</a>
+          <a href="blog.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Blog</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Contact</a>
         </div>
 
         <!-- Desktop Utility Buttons (RTL, Theme, then Enquire CTA button) -->
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
           
           <!-- RTL Toggle -->
-          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
             <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
           </button>
           
           <!-- Theme Toggle -->
-          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
             <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
             <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
           </button>
@@ -90,7 +90,7 @@
 
         <!-- Mobile Navigation Menu Toggle Button -->
         <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -99,28 +99,29 @@
 
     <!-- Mobile Slide Down Menu (Enquire button placed inside hamburger menu right after Contact) -->
     <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
-      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
-      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home2</a>
-      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
-      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
-      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Cases</a>
-      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
-      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
-      <a href="enquire.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-emerald-50/50 dark:bg-emerald-950/20">Enquire</a>
-      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Home</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Home2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Services</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Cases</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Blog</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Contact</a>
+      <div class="h-[1px] bg-slate-200 dark:bg-emerald-900/50 my-2"></div>
       <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
         <!-- Mobile RTL Toggle -->
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center bg-white dark:bg-[#071e17]" aria-label="Toggle Direction">
           <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
         </button>
         <!-- Mobile Theme Toggle -->
-        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-[#071e17]" aria-label="Toggle Theme">
           <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
           <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
           <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
           <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
         </button>
       </div>
+      <!-- Enquire Button -->
+      <a href="enquire.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">Enquire Now</a>
       <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
@@ -131,33 +132,30 @@
   <main class="flex-grow pt-20">
     
     <!-- 1. Hero Section -->
-    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950">
-      <!-- Gradient background overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-slate-900/40 z-0"></div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5 relative z-10 animate-fade-in-up">
-        <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-semibold tracking-wide uppercase">
+    <section class="py-20 md:py-28 bg-emerald-50 dark:bg-[#061814] border-b border-emerald-100 dark:border-emerald-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5 animate-fade-in-up">
+        <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3.5 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-300 dark:border-emerald-500/20 text-brand-primary dark:text-emerald-300 text-xs font-semibold tracking-wide uppercase">
           <i data-lucide="zap" class="w-3.5 h-3.5"></i>
           <span>Fast-Track Project Enquiry</span>
         </div>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 dark:text-white leading-tight">
           Request a Tailored Soil & Farm Proposal
         </h1>
-        <p class="text-slate-200 max-w-2xl mx-auto text-sm md:text-base font-normal leading-relaxed">
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm md:text-base font-normal leading-relaxed">
           Submit your land size, cropping goals, and soil challenges. Our team of certified soil microbiologists will deliver a custom regenerative strategy and cost estimate within 24 hours.
         </p>
 
         <!-- Feature Badges -->
-        <div class="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-300">
-          <div class="flex items-center space-x-2 rtl:space-x-reverse bg-slate-900/80 px-3.5 py-2 rounded-xl border border-slate-800">
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-600 dark:text-slate-300">
+          <div class="flex items-center space-x-2 rtl:space-x-reverse bg-white dark:bg-[#071e17] px-3.5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-900/50 shadow-sm">
             <i data-lucide="clock" class="w-4 h-4 text-brand-secondary"></i>
             <span>24-Hour Response Guarantee</span>
           </div>
-          <div class="flex items-center space-x-2 rtl:space-x-reverse bg-slate-900/80 px-3.5 py-2 rounded-xl border border-slate-800">
+          <div class="flex items-center space-x-2 rtl:space-x-reverse bg-white dark:bg-[#071e17] px-3.5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-900/50 shadow-sm">
             <i data-lucide="flask-conical" class="w-4 h-4 text-brand-secondary"></i>
             <span>Lab-Backed Protocol</span>
           </div>
-          <div class="flex items-center space-x-2 rtl:space-x-reverse bg-slate-900/80 px-3.5 py-2 rounded-xl border border-slate-800">
+          <div class="flex items-center space-x-2 rtl:space-x-reverse bg-white dark:bg-[#071e17] px-3.5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-900/50 shadow-sm">
             <i data-lucide="shield-check" class="w-4 h-4 text-brand-secondary"></i>
             <span>100% Confidential Audit</span>
           </div>
@@ -166,21 +164,21 @@
     </section>
 
     <!-- 2. Specialized Proposal Enquiry Section (No Map) -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <section class="py-16 bg-white dark:bg-[#0a231c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           <!-- Left side: Customized Proposal Enquiry Form -->
           <div class="lg:col-span-7">
-            <div class="glass-card p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800">
+            <div class="glass-card p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100 dark:border-emerald-900/40">
               
               <div class="flex items-center justify-between mb-6">
                 <div>
                   <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white text-left rtl:text-right">
                     Project Proposal Enquiry
                   </h2>
-                  <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1">
                     Complete the fields below to receive an customized proposal for your farm.
                   </p>
                 </div>
@@ -190,7 +188,7 @@
               </div>
 
               <!-- Confidentiality Notice -->
-              <div class="mb-8 p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900 flex items-start space-x-3 rtl:space-x-reverse">
+              <div class="mb-8 p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-900/60 flex items-start space-x-3 rtl:space-x-reverse">
                 <i data-lucide="lock" class="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0"></i>
                 <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                   <strong class="font-semibold text-slate-800 dark:text-white">Confidential Land Data Guarantee:</strong> All field coordinates, soil scan data, and yield information submitted via this enquiry are encrypted and never shared.
@@ -200,62 +198,62 @@
               <form action="#" class="space-y-6 text-left ltr:text-left rtl:text-right">
                 
                 <!-- Section Header 1 -->
-                <div class="border-b border-slate-100 dark:border-slate-800 pb-2">
+                <div class="border-b border-slate-100 dark:border-emerald-900/40 pb-2">
                   <h3 class="text-xs font-bold uppercase tracking-wider text-brand-primary dark:text-emerald-400">1. Contact & Farm Ownership</h3>
                 </div>
 
                 <!-- Row 1: Name & Farm Org -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label for="enquire-name" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Full Name *</label>
+                    <label for="enquire-name" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
                     <input type="text" id="enquire-name" required placeholder="e.g. Samuel Davis" 
-                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
                   </div>
                   <div>
-                    <label for="enquire-org" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Farm Name / Organization</label>
+                    <label for="enquire-org" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Farm Name / Organization</label>
                     <input type="text" id="enquire-org" placeholder="e.g. Davis Prairie Farms LLC" 
-                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
                   </div>
                 </div>
 
                 <!-- Row 2: Email & Phone -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label for="enquire-email" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Email Address *</label>
+                    <label for="enquire-email" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
                     <input type="email" id="enquire-email" required placeholder="samuel@davisagri.com" 
-                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
                   </div>
                   <div>
-                    <label for="enquire-phone" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Direct Phone Number *</label>
+                    <label for="enquire-phone" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Direct Phone Number *</label>
                     <input type="tel" id="enquire-phone" required placeholder="+1 (555) 0188" 
-                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                           class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
                   </div>
                 </div>
 
                 <!-- Section Header 2 -->
-                <div class="border-b border-slate-100 dark:border-slate-800 pb-2 pt-2">
+                <div class="border-b border-slate-100 dark:border-emerald-900/40 pb-2 pt-2">
                   <h3 class="text-xs font-bold uppercase tracking-wider text-brand-primary dark:text-emerald-400">2. Farm Scope & Cropping Details</h3>
                 </div>
 
                 <!-- Row 3: Farming System & Acreage -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label for="enquire-system" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Primary Farming System</label>
-                    <select id="enquire-system" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
-                      <option value="row-crops">Row Crop Production (Corn, Soy, Wheat)</option>
-                      <option value="livestock-pasture">Regenerative Livestock & Grazing</option>
-                      <option value="orchard-vineyard">Orchard & Vineyard Production</option>
-                      <option value="agroforestry">Agroforestry & Silvopasture</option>
-                      <option value="organic-transition">Organic Transition Farm</option>
+                    <label for="enquire-system" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Primary Farming System</label>
+                    <select id="enquire-system" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                      <option value="row-crops" class="dark:bg-[#071e17]">Row Crop Production (Corn, Soy, Wheat)</option>
+                      <option value="livestock-pasture" class="dark:bg-[#071e17]">Regenerative Livestock & Grazing</option>
+                      <option value="orchard-vineyard" class="dark:bg-[#071e17]">Orchard & Vineyard Production</option>
+                      <option value="agroforestry" class="dark:bg-[#071e17]">Agroforestry & Silvopasture</option>
+                      <option value="organic-transition" class="dark:bg-[#071e17]">Organic Transition Farm</option>
                     </select>
                   </div>
                   <div>
-                    <label for="enquire-acreage" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Total Acreage Range</label>
-                    <select id="enquire-acreage" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
-                      <option value="under-100">Under 100 Acres</option>
-                      <option value="100-500">100 – 500 Acres</option>
-                      <option value="500-2000">500 – 2,000 Acres</option>
-                      <option value="2000-plus">2,000+ Commercial Acres</option>
+                    <label for="enquire-acreage" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Total Acreage Range</label>
+                    <select id="enquire-acreage" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                      <option value="under-100" class="dark:bg-[#071e17]">Under 100 Acres</option>
+                      <option value="100-500" class="dark:bg-[#071e17]">100 – 500 Acres</option>
+                      <option value="500-2000" class="dark:bg-[#071e17]">500 – 2,000 Acres</option>
+                      <option value="2000-plus" class="dark:bg-[#071e17]">2,000+ Commercial Acres</option>
                     </select>
                   </div>
                 </div>
@@ -263,55 +261,55 @@
                 <!-- Row 4: Primary Service Requested & Timeline -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label for="enquire-service" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Target Service Required</label>
-                    <select id="enquire-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
-                      <option value="soil-audit">Soil Microbiology Bio-Scan & Testing</option>
-                      <option value="cover-crop">Custom Cover Crop Mix Formulation</option>
-                      <option value="grazing-plan">Adaptive Rotational Grazing Design</option>
-                      <option value="carbon-credit">Carbon Credit Qualification Audit</option>
-                      <option value="full-transition">Whole-Farm Regenerative Transition Plan</option>
+                    <label for="enquire-service" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Target Service Required</label>
+                    <select id="enquire-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                      <option value="soil-audit" class="dark:bg-[#071e17]">Soil Microbiology Bio-Scan & Testing</option>
+                      <option value="cover-crop" class="dark:bg-[#071e17]">Custom Cover Crop Mix Formulation</option>
+                      <option value="grazing-plan" class="dark:bg-[#071e17]">Adaptive Rotational Grazing Design</option>
+                      <option value="carbon-credit" class="dark:bg-[#071e17]">Carbon Credit Qualification Audit</option>
+                      <option value="full-transition" class="dark:bg-[#071e17]">Whole-Farm Regenerative Transition Plan</option>
                     </select>
                   </div>
                   <div>
-                    <label for="enquire-timeline" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Desired Start Timeline</label>
-                    <select id="enquire-timeline" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
-                      <option value="immediate">Immediate (Next 30 Days)</option>
-                      <option value="next-season">Next Planting Season</option>
-                      <option value="planning">Long-Term Strategic Planning</option>
+                    <label for="enquire-timeline" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Desired Start Timeline</label>
+                    <select id="enquire-timeline" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all">
+                      <option value="immediate" class="dark:bg-[#071e17]">Immediate (Next 30 Days)</option>
+                      <option value="next-season" class="dark:bg-[#071e17]">Next Planting Season</option>
+                      <option value="planning" class="dark:bg-[#071e17]">Long-Term Strategic Planning</option>
                     </select>
                   </div>
                 </div>
 
                 <!-- Section Header 3 -->
-                <div class="border-b border-slate-100 dark:border-slate-800 pb-2 pt-2">
+                <div class="border-b border-slate-100 dark:border-emerald-900/40 pb-2 pt-2">
                   <h3 class="text-xs font-bold uppercase tracking-wider text-brand-primary dark:text-emerald-400">3. Primary Soil Challenges & Objectives</h3>
                 </div>
 
                 <!-- Soil Challenge Checkboxes -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/30 cursor-pointer hover:border-brand-primary transition-colors">
+                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/30 dark:bg-[#071e17]/50 cursor-pointer hover:border-brand-primary transition-colors">
                     <input type="checkbox" checked class="w-4 h-4 rounded text-brand-primary focus:ring-brand-primary">
-                    <span class="text-slate-700 dark:text-slate-300">Soil Compaction / Hardpan</span>
+                    <span class="text-slate-700 dark:text-slate-300 font-medium">Soil Compaction / Hardpan</span>
                   </label>
-                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/30 cursor-pointer hover:border-brand-primary transition-colors">
+                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/30 dark:bg-[#071e17]/50 cursor-pointer hover:border-brand-primary transition-colors">
                     <input type="checkbox" checked class="w-4 h-4 rounded text-brand-primary focus:ring-brand-primary">
-                    <span class="text-slate-700 dark:text-slate-300">High Synthetic Input Costs</span>
+                    <span class="text-slate-700 dark:text-slate-300 font-medium">High Synthetic Input Costs</span>
                   </label>
-                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/30 cursor-pointer hover:border-brand-primary transition-colors">
+                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/30 dark:bg-[#071e17]/50 cursor-pointer hover:border-brand-primary transition-colors">
                     <input type="checkbox" class="w-4 h-4 rounded text-brand-primary focus:ring-brand-primary">
-                    <span class="text-slate-700 dark:text-slate-300">Low Water Infiltration / Erosion</span>
+                    <span class="text-slate-700 dark:text-slate-300 font-medium">Low Water Infiltration / Erosion</span>
                   </label>
-                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/30 cursor-pointer hover:border-brand-primary transition-colors">
+                  <label class="flex items-center space-x-2.5 rtl:space-x-reverse p-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/30 dark:bg-[#071e17]/50 cursor-pointer hover:border-brand-primary transition-colors">
                     <input type="checkbox" class="w-4 h-4 rounded text-brand-primary focus:ring-brand-primary">
-                    <span class="text-slate-700 dark:text-slate-300">Organic Matter Building</span>
+                    <span class="text-slate-700 dark:text-slate-300 font-medium">Organic Matter Building</span>
                   </label>
                 </div>
 
                 <!-- Textarea: Specific Notes -->
                 <div>
-                  <label for="enquire-notes" class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Field Notes & Special Requirements</label>
+                  <label for="enquire-notes" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">Field Notes & Special Requirements</label>
                   <textarea id="enquire-notes" rows="4" placeholder="Mention any past soil tests, current crop rotation, or specific questions for our agronomists..." 
-                            class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all"></textarea>
+                            class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/60 bg-slate-50/50 dark:bg-[#071e17] text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all"></textarea>
                 </div>
 
                 <!-- Submit CTA Button -->
@@ -327,13 +325,13 @@
           <div class="lg:col-span-5 space-y-8 text-left ltr:text-left rtl:text-right">
             
             <!-- Card 1: What Happens After You Enquire? -->
-            <div class="glass-card p-7 rounded-3xl border border-slate-100 dark:border-slate-800 space-y-6">
+            <div class="glass-card p-7 rounded-3xl border border-slate-100 dark:border-emerald-900/40 space-y-6">
               <h3 class="font-bold font-outfit text-slate-900 dark:text-white text-xl flex items-center space-x-2 rtl:space-x-reverse">
                 <i data-lucide="workflow" class="w-5 h-5 text-brand-primary"></i>
                 <span>Proposal Workflow</span>
               </h3>
               
-              <div class="space-y-6 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-emerald-100 dark:before:bg-emerald-950/60">
+              <div class="space-y-6 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-emerald-100 dark:before:bg-emerald-900/60">
                 
                 <!-- Step 1 -->
                 <div class="relative flex items-start space-x-4 rtl:space-x-reverse">
@@ -342,7 +340,7 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-sm text-slate-900 dark:text-white">Satellite & GIS Soil Assessment</h4>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">
                       Our lab runs remote satellite imagery and USDA soil survey data for your property coordinates within 12 hours.
                     </p>
                   </div>
@@ -355,7 +353,7 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-sm text-slate-900 dark:text-white">1-on-1 Agronomist Discovery Call</h4>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">
                       A senior microbiologist schedules a brief 20-minute consultation to review your budget and yield targets.
                     </p>
                   </div>
@@ -368,7 +366,7 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-sm text-slate-900 dark:text-white">Custom Regenerative Scope & Proposal</h4>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">
                       Receive a multi-year regenerative roadmap complete with soil bio-scan quotes and seed mix prescriptions.
                     </p>
                   </div>
@@ -378,55 +376,55 @@
             </div>
 
             <!-- Card 2: Proven Impact Highlights -->
-            <div class="glass-card p-7 rounded-3xl border border-slate-100 dark:border-slate-800 space-y-4">
+            <div class="glass-card p-7 rounded-3xl border border-slate-100 dark:border-emerald-900/40 space-y-4">
               <h3 class="font-bold font-outfit text-slate-900 dark:text-white text-lg">Expected Farm ROI</h3>
               
               <div class="grid grid-cols-2 gap-4">
-                <div class="p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100/50 dark:border-emerald-900/30 text-center">
+                <div class="p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/40 border border-emerald-100/50 dark:border-emerald-900/60 text-center">
                   <span class="block text-2xl font-extrabold font-outfit text-brand-primary dark:text-emerald-400">+3.5x</span>
-                  <span class="text-xs text-slate-600 dark:text-slate-400 font-medium mt-1 block">Fungal-to-Bacterial Ratio</span>
+                  <span class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-1 block">Fungal-to-Bacterial Ratio</span>
                 </div>
                 <div class="p-4 rounded-2xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-100/50 dark:border-amber-900/30 text-center">
                   <span class="block text-2xl font-extrabold font-outfit text-amber-600 dark:text-amber-400">$45-$80</span>
-                  <span class="text-xs text-slate-600 dark:text-slate-400 font-medium mt-1 block">Input Savings / Acre</span>
+                  <span class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-1 block">Input Savings / Acre</span>
                 </div>
               </div>
             </div>
 
             <!-- Card 3: Frequently Asked Enquiry Questions -->
-            <div class="glass-card p-7 rounded-3xl border border-slate-100 dark:border-slate-800 space-y-4">
+            <div class="glass-card p-7 rounded-3xl border border-slate-100 dark:border-emerald-900/40 space-y-4">
               <h3 class="font-bold font-outfit text-slate-900 dark:text-white text-lg flex items-center space-x-2 rtl:space-x-reverse">
                 <i data-lucide="help-circle" class="w-5 h-5 text-brand-primary"></i>
                 <span>Quick Enquiry FAQs</span>
               </h3>
               
               <div class="space-y-3">
-                <details class="group p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 text-xs sm:text-sm">
+                <details class="group p-3.5 rounded-xl border border-slate-100 dark:border-emerald-900/40 bg-white/50 dark:bg-[#071e17]/60 text-xs sm:text-sm">
                   <summary class="font-semibold text-slate-900 dark:text-white cursor-pointer flex justify-between items-center">
                     <span>Is there any fee to submit an enquiry?</span>
                     <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
                   </summary>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">
+                  <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed">
                     No, submitting a proposal enquiry and your initial discovery call with our agronomist team are completely complimentary.
                   </p>
                 </details>
 
-                <details class="group p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 text-xs sm:text-sm">
+                <details class="group p-3.5 rounded-xl border border-slate-100 dark:border-emerald-900/40 bg-white/50 dark:bg-[#071e17]/60 text-xs sm:text-sm">
                   <summary class="font-semibold text-slate-900 dark:text-white cursor-pointer flex justify-between items-center">
                     <span>Do I need past soil test results?</span>
                     <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
                   </summary>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">
+                  <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed">
                     Not at all. If you have past Haney or PLFA reports, you can share them, but TerraSoil offers full GPS soil sampling as part of our consultation packages.
                   </p>
                 </details>
 
-                <details class="group p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/40 text-xs sm:text-sm">
+                <details class="group p-3.5 rounded-xl border border-slate-100 dark:border-emerald-900/40 bg-white/50 dark:bg-[#071e17]/60 text-xs sm:text-sm">
                   <summary class="font-semibold text-slate-900 dark:text-white cursor-pointer flex justify-between items-center">
                     <span>Are your plans NRCS EQIP compliant?</span>
                     <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
                   </summary>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">
+                  <p class="text-xs text-slate-600 dark:text-slate-300 mt-2.5 leading-relaxed">
                     Yes, our certified crop advisors (CCA) design cover crop mixes and nutrient management plans that meet USDA-NRCS technical standards.
                   </p>
                 </details>
@@ -434,11 +432,11 @@
             </div>
 
             <!-- Card 4: Fast-Track Contact Channels -->
-            <div class="glass-card p-6 rounded-2xl border border-slate-100 dark:border-slate-800 space-y-4">
+            <div class="glass-card p-6 rounded-2xl border border-slate-100 dark:border-emerald-900/40 space-y-4">
               <h3 class="font-bold text-slate-900 dark:text-white text-base">Direct Fast-Track Line</h3>
               
               <div class="space-y-3 text-xs sm:text-sm font-medium">
-                <div class="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-xl bg-slate-50 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-xl bg-slate-50 dark:bg-[#071e17]/80 border border-slate-100 dark:border-emerald-900/40">
                   <div class="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-brand-primary">
                     <i data-lucide="mail" class="w-4 h-4"></i>
                   </div>
@@ -448,7 +446,7 @@
                   </div>
                 </div>
 
-                <div class="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-xl bg-slate-50 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse p-3 rounded-xl bg-slate-50 dark:bg-[#071e17]/80 border border-slate-100 dark:border-emerald-900/40">
                   <div class="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-brand-primary">
                     <i data-lucide="phone-call" class="w-4 h-4"></i>
                   </div>

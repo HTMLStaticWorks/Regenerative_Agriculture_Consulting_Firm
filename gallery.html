@@ -42,7 +42,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 dark:bg-[#061814] dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
 
   <!-- ================= NAVBAR ================= -->
   <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -60,26 +60,26 @@
         </a>
 
         <!-- Desktop Menu (Single word items) -->
-        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
-          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home</a>
-          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home2</a>
-          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">About</a>
-          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Services</a>
-          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-emerald-400">Cases</a>
-          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Blog</a>
-          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+        <div class="hidden lg:flex items-center space-x-2 rtl:space-x-reverse">
+          <a href="index.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Home</a>
+          <a href="home2.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Home2</a>
+          <a href="about.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">About</a>
+          <a href="services.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Services</a>
+          <a href="gallery.html" class="px-3.5 py-2 rounded-lg text-[15px] font-semibold transition-colors text-brand-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50">Cases</a>
+          <a href="blog.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Blog</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Contact</a>
         </div>
 
         <!-- Desktop Utility Buttons -->
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
           
           <!-- RTL Toggle -->
-          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
             <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
           </button>
           
           <!-- Theme Toggle -->
-          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
             <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
             <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
           </button>
@@ -90,7 +90,7 @@
 
         <!-- Mobile Navigation Menu Toggle Button -->
         <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -99,28 +99,29 @@
 
     <!-- Mobile Slide Down Menu -->
     <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
-      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
-      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home2</a>
-      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
-      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
-      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-emerald-50/50 dark:bg-emerald-950/20">Cases</a>
-      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
-      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
-      <a href="enquire.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Enquire</a>
-      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Home</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Home2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Services</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50">Cases</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Blog</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Contact</a>
+      <div class="h-[1px] bg-slate-200 dark:bg-emerald-900/50 my-2"></div>
       <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
         <!-- Mobile RTL Toggle -->
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center bg-white dark:bg-[#071e17]" aria-label="Toggle Direction">
           <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
         </button>
         <!-- Mobile Theme Toggle -->
-        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-[#071e17]" aria-label="Toggle Theme">
           <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
           <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
           <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
           <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
         </button>
       </div>
+      <!-- Enquire Button -->
+      <a href="enquire.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">Enquire Now</a>
       <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
@@ -131,29 +132,26 @@
   <main class="flex-grow pt-20">
     
     <!-- 1. Hero Section -->
-    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950">
-      <!-- Gradient/Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-slate-900/30 z-0"></div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
-        <span class="text-emerald-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Field Case Studies</span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
+    <section class="py-20 md:py-28 bg-emerald-50 dark:bg-[#061814] border-b border-emerald-100 dark:border-emerald-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 animate-fade-in-up">
+        <span class="text-brand-primary dark:text-emerald-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Field Case Studies</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 dark:text-white leading-tight">
           Regenerative Farm Case Studies & Soil Transformation Results
         </h1>
-        <p class="text-slate-200 max-w-xl mx-auto text-xs sm:text-sm md:text-base font-normal leading-relaxed">
+        <p class="text-slate-600 dark:text-slate-300 max-w-xl mx-auto text-sm md:text-base font-normal leading-relaxed">
           Examine real-world biological soil transformations, yield resilience metrics, and field lab bio-scan results across our client farms.
         </p>
       </div>
     </section>
 
     <!-- 2. Before & After Case Studies Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <section class="py-16 bg-white dark:bg-[#0a231c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm font-outfit">Verified Field Metrics</span>
           <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Farm Ecosystem Transformations</h2>
-          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+          <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base font-normal">
             Side-by-side comparative analysis of degraded conventional fields vs. biological soil systems under TerraSoil management.
           </p>
         </div>
@@ -166,24 +164,24 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Before -->
-              <div class="glass-card rounded-2xl overflow-hidden border border-amber-100 dark:border-amber-950/20">
+              <div class="glass-card rounded-2xl overflow-hidden border border-amber-100 dark:border-amber-950/40">
                 <div class="h-64 overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Eroded conventional field" class="w-full h-full object-cover">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VzLel6QV7zI_RMYCcBUkrUAKbfKZspghsnHS-lXvl5VwWQAQA4ASm1c&s=10" alt="Eroded conventional field" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
                   <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Conventional Tilled State</h4>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">Hardpan compaction at 8-inch depth, heavy water runoff during rain, and $220/acre chemical input costs.</p>
+                  <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">Hardpan compaction at 8-inch depth, heavy water runoff during rain, and $220/acre chemical input costs.</p>
                 </div>
               </div>
               
               <!-- After -->
-              <div class="glass-card rounded-2xl overflow-hidden border border-emerald-100 dark:border-emerald-950/20">
+              <div class="glass-card rounded-2xl overflow-hidden border border-emerald-100 dark:border-emerald-900/40">
                 <div class="h-64 overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80" alt="Humus carbon rich soil" class="w-full h-full object-cover">
+                  <img src="https://i0.wp.com/yarafert.com/wp-content/uploads/2024/08/9227.webp?fit=2000%2C1334&ssl=1" alt="Humus carbon rich soil" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
                   <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Regenerated Humus Soil</h4>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">3.8% SOM (+1.4% gain), 4-inch/hr infiltration rate, and 35% reduction in synthetic nitrogen needs.</p>
+                  <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">3.8% SOM (+1.4% gain), 4-inch/hr infiltration rate, and 35% reduction in synthetic nitrogen needs.</p>
                 </div>
               </div>
             </div>
@@ -195,24 +193,24 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Before -->
-              <div class="glass-card rounded-2xl overflow-hidden border border-amber-100 dark:border-amber-950/20">
+              <div class="glass-card rounded-2xl overflow-hidden border border-amber-100 dark:border-amber-950/40">
                 <div class="h-64 overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Overgrazed pasture field" class="w-full h-full object-cover">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcfXSK080Uxsyx34m_BgwOSSAi5o9eidpgLQg6ZxqIK56JMuFcrmEorVmN&s=10" alt="Overgrazed pasture field" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
                   <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">Continuous Grazing Pasture</h4>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">Weed invasion, low forage regrowth rate, bare soil patches, and poor cattle weight gain during summer.</p>
+                  <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">Weed invasion, low forage regrowth rate, bare soil patches, and poor cattle weight gain during summer.</p>
                 </div>
               </div>
               
               <!-- After -->
-              <div class="glass-card rounded-2xl overflow-hidden border border-emerald-100 dark:border-emerald-950/20">
+              <div class="glass-card rounded-2xl overflow-hidden border border-emerald-100 dark:border-emerald-900/40">
                 <div class="h-64 overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1545468800-85cc9bc6ecf7?auto=format&fit=crop&w=800&q=80" alt="AMP Grazing Pasture" class="w-full h-full object-cover">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRad8ZqvsnR4KaYc0hXCRzIMluB9Wra5sj7CaEAWE1nTJdDw7z5a9URtJOa&s=10" alt="AMP Grazing Pasture" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
                   <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">AMP Rotational System</h4>
-                  <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed">Doubled grazing days per acre, lush warm-season grass diversity, and rapid animal weight gain.</p>
+                  <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">Doubled grazing days per acre, lush warm-season grass diversity, and rapid animal weight gain.</p>
                 </div>
               </div>
             </div>
@@ -224,7 +222,7 @@
     </section>
 
     <!-- 3. Field & Lab Gallery (6 Cards) -->
-    <section class="py-16 bg-slate-50 dark:bg-slate-950">
+    <section class="py-16 bg-slate-50 dark:bg-[#061814]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -238,78 +236,78 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Card 1 -->
-          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md">
-            <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80" 
+          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-emerald-900/40 shadow-md">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljn1FaN7oQAFf3pYiY7n9Pupps8MhxYgjq45EYaLWk3bfYve8JDsFMwNh&s=10" 
                  alt="GPS soil core extraction lab" 
                  class="h-72 w-full object-cover">
             <div class="p-6 text-left rtl:text-right">
               <h4 class="font-bold text-slate-900 dark:text-white mb-2">GPS Core Sampling & Extraction</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                 Precision soil core samples collected across management zones to map soil fertility and biological variations.
               </p>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md">
-            <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80" 
+          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-emerald-900/40 shadow-md">
+            <img src="https://i.ytimg.com/vi/YsEYs3YfkKE/maxresdefault.jpg" 
                  alt="Field water infiltration testing" 
                  class="h-72 w-full object-cover">
             <div class="p-6 text-left rtl:text-right">
               <h4 class="font-bold text-slate-900 dark:text-white mb-2">Field Infiltration & Structure Testing</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                 Single and double ring infiltrometer tests measuring field water absorption rates during heavy rainfall.
               </p>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md">
-            <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb1475a?auto=format&fit=crop&w=800&q=80" 
+          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-emerald-900/40 shadow-md">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOhBBGft4rf1Qy3Bgp7V_-HgZnNtGGgRt78o5Xl9cuWqryijTryKfa3Q&s=10" 
                  alt="Cover crop cocktail biomass trial" 
                  class="h-72 w-full object-cover">
             <div class="p-6 text-left rtl:text-right">
               <h4 class="font-bold text-slate-900 dark:text-white mb-2">Cover Crop Biomass Evaluation</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                 Measuring above-ground biomass tonnage and root mass produced by multi-species cover crop mixes.
               </p>
             </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" 
+          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-emerald-900/40 shadow-md">
+            <img src="https://images.stockcake.com/public/9/d/a/9dafce20-5b5a-4612-978e-77405ddf1bbd_large/soil-layer-exposure-stockcake.jpg" 
                  alt="Subsoil root depth analysis" 
                  class="h-72 w-full object-cover">
             <div class="p-6 text-left rtl:text-right">
               <h4 class="font-bold text-slate-900 dark:text-white mb-2">Subsoil Root Depth Analysis</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                 Excavating soil pits to verify taproot penetration through hardpans and mycorrhizal colonization.
               </p>
             </div>
           </div>
 
           <!-- Card 5 -->
-          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md">
-            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80" 
+          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-emerald-900/40 shadow-md">
+            <img src="https://fieldreport.caes.uga.edu/wp-content/uploads/2012/09/soil-testing-1500x1000px.jpg" 
                  alt="Soil Organic Matter reports" 
                  class="h-72 w-full object-cover">
             <div class="p-6 text-left rtl:text-right">
               <h4 class="font-bold text-slate-900 dark:text-white mb-2">Soil Organic Carbon Reports</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                 Detailed lab carbon sequestration tracking reports prepared for farm carbon credit verification.
               </p>
             </div>
           </div>
 
           <!-- Card 6 -->
-          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-md">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
+          <div class="glass-card rounded-2xl overflow-hidden border border-slate-100 dark:border-emerald-900/40 shadow-md">
+            <img src="https://www.agrifj.co.uk/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMFVJQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--45779bd758623e7e0b1a5f033f701e37bc85cecb/AgronomicServices.jpg" 
                  alt="On-site agronomist field consultation" 
                  class="h-72 w-full object-cover">
             <div class="p-6 text-left rtl:text-right">
               <h4 class="font-bold text-slate-900 dark:text-white mb-2">On-Site Agronomist Field Audits</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                 Direct in-person consultations with farm operators to review planter settings and termination timing.
               </p>
             </div>
@@ -321,58 +319,58 @@
     </section>
 
     <!-- 4. Advanced Modalities / Tools (4 Cards) -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <section class="py-16 bg-white dark:bg-[#0a231c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm font-outfit">Technology Suite</span>
           <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Advanced Agronomic Technologies</h2>
-          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+          <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base font-normal">
             Integrating cutting-edge imagery and molecular bio-scans to elevate farm decision-making.
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Tool 1 -->
-          <div class="p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-900 text-center space-y-3">
-            <div class="w-12 h-12 bg-white dark:bg-slate-900 text-brand-primary rounded-xl flex items-center justify-center mx-auto shadow-sm">
+          <div class="p-6 bg-slate-50 dark:bg-[#071e17] rounded-2xl border border-slate-100 dark:border-emerald-900/40 text-center space-y-3">
+            <div class="w-12 h-12 bg-white dark:bg-[#061814] text-brand-primary rounded-xl flex items-center justify-center mx-auto shadow-sm">
               <i data-lucide="satellite" class="w-6 h-6"></i>
             </div>
-            <h4 class="font-bold text-slate-900 dark:text-white text-base">Satellite NDVI Indexing</h4>
-            <p class="text-xs text-slate-400 font-normal">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Satellite NDVI</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
               High-resolution satellite imagery monitoring crop vigor, biomass accumulation, and nitrogen stress across all acres.
             </p>
           </div>
 
           <!-- Tool 2 -->
-          <div class="p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-900 text-center space-y-3">
-            <div class="w-12 h-12 bg-white dark:bg-slate-900 text-brand-secondary rounded-xl flex items-center justify-center mx-auto shadow-sm">
+          <div class="p-6 bg-slate-50 dark:bg-[#071e17] rounded-2xl border border-slate-100 dark:border-emerald-900/40 text-center space-y-3">
+            <div class="w-12 h-12 bg-white dark:bg-[#061814] text-brand-secondary rounded-xl flex items-center justify-center mx-auto shadow-sm">
               <i data-lucide="dna" class="w-6 h-6"></i>
             </div>
             <h4 class="font-bold text-slate-900 dark:text-white text-base">PLFA DNA Bio-Scans</h4>
-            <p class="text-xs text-slate-400 font-normal">
+            <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
               Phospholipid Fatty Acid bio-scans identifying active fungal-to-bacterial biomass ratios and soil food web balance.
             </p>
           </div>
 
           <!-- Tool 3 -->
-          <div class="p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-900 text-center space-y-3">
-            <div class="w-12 h-12 bg-white dark:bg-slate-900 text-emerald-400 rounded-xl flex items-center justify-center mx-auto shadow-sm">
+          <div class="p-6 bg-slate-50 dark:bg-[#071e17] rounded-2xl border border-slate-100 dark:border-emerald-900/40 text-center space-y-3">
+            <div class="w-12 h-12 bg-white dark:bg-[#061814] text-emerald-400 rounded-xl flex items-center justify-center mx-auto shadow-sm">
               <i data-lucide="flask-conical" class="w-6 h-6"></i>
             </div>
-            <h4 class="font-bold text-slate-900 dark:text-white text-base">Haney Soil Health Score</h4>
-            <p class="text-xs text-slate-400 font-normal">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Haney Soil Health</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
               Evaluating water-extractable organic carbon and organic nitrogen to measure biologically available plant nutrients.
             </p>
           </div>
 
           <!-- Tool 4 -->
-          <div class="p-6 bg-slate-50 dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-900 text-center space-y-3">
-            <div class="w-12 h-12 bg-white dark:bg-slate-900 text-amber-500 rounded-xl flex items-center justify-center mx-auto shadow-sm">
+          <div class="p-6 bg-slate-50 dark:bg-[#071e17] rounded-2xl border border-slate-100 dark:border-emerald-900/40 text-center space-y-3">
+            <div class="w-12 h-12 bg-white dark:bg-[#061814] text-amber-500 rounded-xl flex items-center justify-center mx-auto shadow-sm">
               <i data-lucide="map" class="w-6 h-6"></i>
             </div>
             <h4 class="font-bold text-slate-900 dark:text-white text-base">Variable-Rate Maps</h4>
-            <p class="text-xs text-slate-400 font-normal">
+            <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
               Custom prescription seed maps compatible with modern tractor monitors for precise cover crop seeding.
             </p>
           </div>

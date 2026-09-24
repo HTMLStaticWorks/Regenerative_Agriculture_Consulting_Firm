@@ -42,7 +42,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 dark:bg-[#061814] dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
 
   <!-- ================= NAVBAR ================= -->
   <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -60,26 +60,26 @@
         </a>
 
         <!-- Desktop Menu (Single word items) -->
-        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
-          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home</a>
-          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Home2</a>
-          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-emerald-400">About</a>
-          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Services</a>
-          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Cases</a>
-          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Blog</a>
-          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+        <div class="hidden lg:flex items-center space-x-2 rtl:space-x-reverse">
+          <a href="index.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Home</a>
+          <a href="home2.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Home2</a>
+          <a href="about.html" class="px-3.5 py-2 rounded-lg text-[15px] font-semibold transition-colors text-brand-primary dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50">About</a>
+          <a href="services.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Services</a>
+          <a href="gallery.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Cases</a>
+          <a href="blog.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Blog</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-lg text-[15px] font-medium text-slate-700 hover:text-brand-primary dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-50 dark:hover:bg-emerald-950/40 transition-colors">Contact</a>
         </div>
 
         <!-- Desktop Utility Buttons -->
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
           
           <!-- RTL Toggle -->
-          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
             <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
           </button>
           
           <!-- Theme Toggle -->
-          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
             <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
             <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
           </button>
@@ -90,7 +90,7 @@
 
         <!-- Mobile Navigation Menu Toggle Button -->
         <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-emerald-900/50 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -99,28 +99,29 @@
 
     <!-- Mobile Slide Down Menu -->
     <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
-      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
-      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home2</a>
-      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-emerald-50/50 dark:bg-emerald-950/20">About</a>
-      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
-      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Cases</a>
-      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
-      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
-      <a href="enquire.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Enquire</a>
-      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Home</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Home2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Services</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Cases</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Blog</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-emerald-950/40">Contact</a>
+      <div class="h-[1px] bg-slate-200 dark:bg-emerald-900/50 my-2"></div>
       <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
         <!-- Mobile RTL Toggle -->
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center bg-white dark:bg-[#071e17]" aria-label="Toggle Direction">
           <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
         </button>
         <!-- Mobile Theme Toggle -->
-        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/50 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-[#071e17]" aria-label="Toggle Theme">
           <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
           <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
           <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
           <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
         </button>
       </div>
+      <!-- Enquire Button -->
+      <a href="enquire.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-primary to-brand-accent text-white text-sm font-semibold shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">Enquire Now</a>
       <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
@@ -131,23 +132,20 @@
   <main class="flex-grow pt-20">
     
     <!-- 1. Hero Section -->
-    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950">
-      <!-- Gradient/Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-slate-900/30 z-0"></div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
-        <span class="text-emerald-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Who We Are</span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
+    <section class="py-20 md:py-28 bg-emerald-50 dark:bg-[#061814] border-b border-emerald-100 dark:border-emerald-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 animate-fade-in-up">
+        <span class="text-brand-primary dark:text-emerald-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Who We Are</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 dark:text-white leading-tight">
           About TerraSoil Consulting Firm
         </h1>
-        <p class="text-slate-200 max-w-xl mx-auto text-xs sm:text-sm md:text-base font-normal leading-relaxed">
+        <p class="text-slate-600 dark:text-slate-300 max-w-xl mx-auto text-sm md:text-base font-normal leading-relaxed">
           Learn about our mission, our team of certified agronomists and soil microbiologists, and our science-based commitment to soil health.
         </p>
       </div>
     </section>
 
     <!-- 2. Practice Story Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <section class="py-16 bg-white dark:bg-[#0a231c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -162,18 +160,18 @@
             </p>
             
             <!-- Value bullets -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100 dark:border-emerald-900/40">
               <div>
                 <h4 class="font-bold text-slate-900 dark:text-white text-base">Scientific Precision</h4>
-                <p class="text-xs text-slate-400 mt-1 font-normal">All recommendations rely on rigorous ISO-certified lab bio-scans and field data.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-normal">All recommendations rely on rigorous ISO-certified lab bio-scans and field data.</p>
               </div>
               <div>
-                <h4 class="font-bold text-slate-900 dark:text-white text-base">Ecological Stewardship</h4>
-                <p class="text-xs text-slate-400 mt-1 font-normal">We build long-term biological fertility that protects soil, water, and climate resilience.</p>
+                <h4 class="font-bold text-slate-900 dark:text-white text-base">Ecological</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-normal">We build long-term biological fertility that protects soil, water, and climate resilience.</p>
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 dark:text-white text-base">Farmer Profitability</h4>
-                <p class="text-xs text-slate-400 mt-1 font-normal">We optimize synthetic inputs to lower production costs while improving crop yields.</p>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-normal">We optimize synthetic inputs to lower production costs while improving crop yields.</p>
               </div>
             </div>
           </div>
@@ -182,7 +180,7 @@
           <div class="lg:col-span-5 relative">
             <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-primary to-brand-accent opacity-10 blur-xl dark:opacity-20"></div>
             <div class="relative glass-card p-3 rounded-3xl shadow-xl">
-              <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80" 
+              <img src="https://content.jdmagicbox.com/comp/def_content/soil-testing-services/1-soil-testing-services-1-hf0jz.jpg" 
                    alt="TerraSoil Soil Science Diagnostics Lab" 
                    class="rounded-2xl w-full h-auto aspect-[4/3] lg:h-[340px] lg:aspect-auto object-cover object-center">
             </div>
@@ -193,7 +191,7 @@
     </section>
 
     <!-- 3. Credentials & Certifications Section -->
-    <section class="py-16 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+    <section class="py-16 bg-slate-50 dark:bg-[#061814] relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -208,52 +206,52 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Cert 1 -->
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-brand-primary shadow-sm">
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-emerald-900/40 flex flex-col items-center text-center space-y-4">
+            <div class="p-4 bg-white dark:bg-[#071e17] rounded-2xl text-brand-primary shadow-sm">
               <i data-lucide="award" class="w-7 h-7"></i>
             </div>
             <div>
               <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">SSSA Certified</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
                 Certified by the Soil Science Society of America, adhering to peer-reviewed biological and physical soil standards.
               </p>
             </div>
           </div>
 
           <!-- Cert 2 -->
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-brand-secondary shadow-sm">
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-emerald-900/40 flex flex-col items-center text-center space-y-4">
+            <div class="p-4 bg-white dark:bg-[#071e17] rounded-2xl text-brand-secondary shadow-sm">
               <i data-lucide="shield-check" class="w-7 h-7"></i>
             </div>
             <div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">USDA NRCS Aligned</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">USDA NRCS</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
                 Our conservation plans align with USDA NRCS regenerative soil health principles and EQIP cost-share programs.
               </p>
             </div>
           </div>
 
           <!-- Cert 3 -->
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-emerald-400 shadow-sm">
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-emerald-900/40 flex flex-col items-center text-center space-y-4">
+            <div class="p-4 bg-white dark:bg-[#071e17] rounded-2xl text-emerald-400 shadow-sm">
               <i data-lucide="check-circle" class="w-7 h-7"></i>
             </div>
             <div>
               <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">CCA Agronomists</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
                 Certified Crop Advisors specializing in nutrient management, soil fertility, and Integrated Pest Management (IPM).
               </p>
             </div>
           </div>
 
           <!-- Cert 4 -->
-          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center space-y-4">
-            <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl text-amber-500 shadow-sm">
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-emerald-900/40 flex flex-col items-center text-center space-y-4">
+            <div class="p-4 bg-white dark:bg-[#071e17] rounded-2xl text-amber-500 shadow-sm">
               <i data-lucide="flask-conical" class="w-7 h-7"></i>
             </div>
             <div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">ISO 17025 Lab Accredited</h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2">ISO 17025 Lab</h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
                 All soil bio-scans and chemical tissue assays are tested in ISO 17025 accredited agricultural research laboratories.
               </p>
             </div>
@@ -264,7 +262,7 @@
     </section>
 
     <!-- 4. Our Approach Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <section class="py-16 bg-white dark:bg-[#0a231c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -272,7 +270,7 @@
           <div class="lg:col-span-5 relative order-last lg:order-first">
             <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-secondary to-brand-primary opacity-10 blur-xl dark:opacity-20"></div>
             <div class="relative glass-card p-3 rounded-3xl shadow-xl">
-              <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80" 
+              <img src="https://media.istockphoto.com/id/1171878183/photo/laboratory-assistant-holding-glass-tubes-of-sand-black-soil-and-clay-befor-testing-them.jpg?s=612x612&w=0&k=20&c=GogZwXXUn0CPjrlcV7HqhhmZpoCSL-IU-nz4s4oQk8U=" 
                    alt="TerraSoil Agronomist examining soil health" 
                    class="rounded-2xl w-full h-auto aspect-[4/3] lg:h-[340px] lg:aspect-auto object-cover object-center">
             </div>
@@ -295,7 +293,7 @@
               <a href="contact.html" class="px-6 py-3 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white font-semibold shadow-md shadow-emerald-600/20 transition-colors">
                 Book Consultation
               </a>
-              <a href="services.html" class="px-6 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 font-semibold hover:bg-emerald-50 hover:text-brand-primary hover:border-brand-primary dark:hover:bg-slate-800 dark:hover:text-white transition-all duration-300">
+              <a href="services.html" class="px-6 py-3 rounded-xl border border-slate-200 dark:border-emerald-900/50 text-slate-700 dark:text-slate-200 font-semibold hover:bg-emerald-50 hover:text-brand-primary hover:border-brand-primary dark:hover:bg-emerald-950/50 dark:hover:text-white transition-all duration-300">
                 Explore Services
               </a>
             </div>
@@ -306,7 +304,7 @@
     </section>
 
     <!-- 5. Our Commitment Section (Dark Mode Design) -->
-    <section class="py-16 bg-slate-900 dark:bg-slate-950 text-white relative overflow-hidden">
+    <section class="py-16 bg-[#061814] text-white relative overflow-hidden">
       <!-- Decorative radial gradient bg -->
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-primary/10 rounded-full blur-3xl pointer-events-none"></div>
       
@@ -325,23 +323,23 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <!-- Feature 1 -->
               <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <div class="p-2.5 bg-slate-800 rounded-xl text-brand-secondary flex-shrink-0">
+                <div class="p-2.5 bg-[#071e17] rounded-xl text-brand-secondary flex-shrink-0">
                   <i data-lucide="sprout" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <h3 class="font-bold text-white text-base">Biological Soil Restoration</h3>
-                  <p class="text-xs text-slate-400 mt-1 leading-relaxed">We reactivate native soil life to unlock locked-up phosphorus and nitrogen naturally.</p>
+                  <p class="text-xs text-slate-300 mt-1 leading-relaxed">We reactivate native soil life to unlock locked-up phosphorus and nitrogen naturally.</p>
                 </div>
               </div>
               
               <!-- Feature 2 -->
               <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <div class="p-2.5 bg-slate-800 rounded-xl text-brand-primary flex-shrink-0">
+                <div class="p-2.5 bg-[#071e17] rounded-xl text-brand-primary flex-shrink-0">
                   <i data-lucide="trending-up" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <h3 class="font-bold text-white text-base">Measurable SOM Gain</h3>
-                  <p class="text-xs text-slate-400 mt-1 leading-relaxed">We track precise annual soil organic matter gains and water infiltration improvements across all fields.</p>
+                  <p class="text-xs text-slate-300 mt-1 leading-relaxed">We track precise annual soil organic matter gains and water infiltration improvements across all fields.</p>
                 </div>
               </div>
             </div>
@@ -350,14 +348,14 @@
           <!-- Right Callout Box -->
           <div class="lg:col-span-5 relative">
             <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-primary to-brand-accent opacity-15 blur-xl"></div>
-            <div class="relative glass-card p-8 rounded-3xl border border-slate-700 bg-slate-800/40 text-left rtl:text-right space-y-6">
+            <div class="relative glass-card p-8 rounded-3xl border border-emerald-900/40 bg-[#071e17]/60 text-left rtl:text-right space-y-6">
               <h3 class="text-xl font-bold font-outfit text-white">Our Agronomic Impact</h3>
               <p class="text-xs text-slate-300 leading-relaxed font-normal">
                 Field data confirms that farms implementing multi-species cover cropping and biological amendments see a 25-40% reduction in synthetic fertilizer costs within 3 crop cycles.
               </p>
-              <div class="flex items-center space-x-4 rtl:space-x-reverse bg-slate-900/60 p-4 rounded-2xl border border-slate-700/50">
+              <div class="flex items-center space-x-4 rtl:space-x-reverse bg-[#061814]/80 p-4 rounded-2xl border border-emerald-900/50">
                 <div class="text-3xl font-extrabold text-emerald-400">120K+</div>
-                <div class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider leading-snug">
+                <div class="text-[11px] text-slate-300 font-semibold uppercase tracking-wider leading-snug">
                   Acres of farmland regenerated under TerraSoil protocols
                 </div>
               </div>
@@ -368,7 +366,7 @@
     </section>
 
     <!-- 6. Agronomist Team Section -->
-    <section class="py-16 bg-white dark:bg-slate-900">
+    <section class="py-16 bg-white dark:bg-[#0a231c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         <div class="max-w-3xl mx-auto mb-16 space-y-4">
@@ -384,48 +382,48 @@
         <!-- Team Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Member 1 -->
-          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
+          <div class="flex flex-col bg-slate-50 dark:bg-[#061814] rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-emerald-900/40 group">
             <div class="overflow-hidden h-96 relative">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/038/962/461/small/ai-generated-caucasian-successful-confident-young-businesswoman-ceo-boss-bank-employee-worker-manager-with-arms-crossed-in-formal-wear-isolated-in-white-background-photo.jpg" 
                    alt="Dr. Rebecca Stern, Lead Soil Microbiologist" 
                    class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 text-left rtl:text-right space-y-2">
               <h3 class="text-lg font-bold text-slate-900 dark:text-white">Dr. Rebecca Stern, PhD</h3>
               <p class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Lead Soil Microbiologist &amp; Founder</p>
-              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed pt-1">
                 Specialist in mycorrhizal fungi dynamics &amp; PLFA bio-scans. Dr. Stern has 15+ years advising grain and livestock operations across North America.
               </p>
             </div>
           </div>
 
           <!-- Member 2 -->
-          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
+          <div class="flex flex-col bg-slate-50 dark:bg-[#061814] rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-emerald-900/40 group">
             <div class="overflow-hidden h-96 relative">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" 
+              <img src="https://img.magnific.com/premium-photo/happy-desk-portrait-black-man-entrepreneur-corporate-company-agency-office-arms-crossed-professional-african-young-person-employee-ready-business-development-with-smile_590464-183502.jpg" 
                    alt="Marcus Vance, Senior Agronomist" 
                    class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 text-left rtl:text-right space-y-2">
               <h3 class="text-lg font-bold text-slate-900 dark:text-white">Marcus Vance, MS, CCA</h3>
               <p class="text-xs text-brand-secondary font-semibold uppercase tracking-wider">Senior Agronomist &amp; Cover Crop Strategist</p>
-              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed pt-1">
                 Specialist in variable-rate cover crop mix formulation and reduced tillage equipment configuration for commercial row crops.
               </p>
             </div>
           </div>
 
           <!-- Member 3 -->
-          <div class="last-card-md flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
+          <div class="last-card-md flex flex-col bg-slate-50 dark:bg-[#061814] rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-emerald-900/40 group">
             <div class="overflow-hidden h-96 relative">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80" 
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/078/691/820/small/professional-woman-with-curly-hair-holding-laptop-outdoors-free-photo.jpg" 
                    alt="Sarah Jenkins, Grazing Specialist" 
                    class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 text-left rtl:text-right space-y-2">
               <h3 class="text-lg font-bold text-slate-900 dark:text-white">Sarah Jenkins, PAS</h3>
               <p class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Managed Grazing &amp; Pasture Specialist</p>
-              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
+              <p class="text-xs text-slate-600 dark:text-slate-300 font-normal leading-relaxed pt-1">
                 Specialist in adaptive multi-paddock (AMP) livestock grazing, forage species diversification, and rangeland soil carbon monitoring.
               </p>
             </div>
