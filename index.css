@@ -254,7 +254,7 @@ html[dir="rtl"] .rtl-flip {
   margin-right: auto !important;
 }
 
-#mobile-menu button {
+#mobile-menu button:not(.rtl-toggle):not(.theme-toggle):not(#mobile-menu-close) {
   max-width: 280px !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -279,6 +279,30 @@ html[dir="rtl"] .rtl-flip {
   max-width: 280px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+/* --- Mobile Menu RTL & Theme Toggles Spacing Fix (368px Mobile & 768px Tablet) --- */
+#mobile-menu .mobile-toggles-row,
+#mobile-menu div.mobile-toggles-row,
+#mobile-menu div.flex {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.875rem !important; /* 14px clear gap between RTL and Theme buttons */
+  width: 100% !important;
+  max-width: 280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#mobile-menu .rtl-toggle,
+#mobile-menu .theme-toggle {
+  flex: 1 1 0% !important;
+  width: auto !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* --- Hero Section Height Overrides --- */
